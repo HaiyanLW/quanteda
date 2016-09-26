@@ -88,8 +88,9 @@ CharacterVector skipgram_cpp2(const std::vector <std::string> &tokens,
 }
 
 /*** R
-skipgram_cpp2(LETTERS, 1:2, 0:1, "_")
-
+#toks <- rep(LETTERS, 20)
+#microbenchmark::microbenchmark(skipgramcpp(toks, 1:2, 0:1, "_"), 
+#                               skipgram_cpp2(toks, 1:2, 0:1, "_"))
 */
 
 
